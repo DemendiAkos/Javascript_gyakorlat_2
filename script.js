@@ -8,7 +8,7 @@ function random_bg_color() {
     ChangeColor.style.backgroundColor=RGBrandom;
 };
 
-ChangeColor.addEventListener('click', random_bg_color)
+ChangeColor.addEventListener('click', random_bg_color);
 
 let Item = document.querySelector(".input");
 let BtnAdd = document.querySelector(".add");
@@ -20,7 +20,7 @@ let index = 0;
 function addStuff () {
   let mainList = document.querySelector(".list");
   let newRow = document.createElement("tr");
-  let newNumber = document.createElement("td")
+  let newNumber = document.createElement("td");
   let newItem = document.createElement("td");
   number++;
   mainList.appendChild (newRow);
@@ -30,9 +30,9 @@ function addStuff () {
   newRow.appendChild (newItem);
   Item.value = ("");
   index++;
-}
+};
 
-BtnAdd.addEventListener("click", addStuff)
+BtnAdd.addEventListener("click", addStuff);
 
 function deleteChild() {
     if (index > 0) {
@@ -41,7 +41,7 @@ function deleteChild() {
       mainList.removeChild(lastChild);
       index--;
       number--;
-    }
-  }
+    };
+  };
   
 BtnDelete.addEventListener("click", deleteChild);
